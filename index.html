@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.jpg">
-  <link rel="stylesheet" href="styles.css">
-  
-  <title>Article preview component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.jpg" />
+    <link rel="stylesheet" href="styles.css" />
 
-</head>
-<body>
+    <title>Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <figure class="image">
+          <img src="./images/drawers.jpg" alt="Drawers picture" />
+        </figure>
+        <h1 class="card__title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="card__paragraph">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <section class="author">
+          <figure>
+            <img
+              class="author__avatar"
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle Appleton avatar"
+            />
+            <figcaption class="author__name">Michelle Appleton</figcaption>
+            <p class="date">28 Jun 2020</p>
+            <button>
+              <img src="./images/icon-share.svg" alt="Share" />
+            </button>
+          </figure>
+        </section>
+      </article>
+    </main>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  <script src="script.js" defer></script>
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
