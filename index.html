@@ -20,7 +20,13 @@
     <main>
       <article class="card">
         <figure class="image">
-          <img src="./images/drawers.jpg" alt="Drawers picture" />
+          <picture>
+            <source
+              srcset="./images/drawers.webp 1x, ./images/drawers@2x.webp 2x"
+              type="image/webp"
+            />
+            <img src="./images/drawers.jpg" alt="Drawers picture" />
+          </picture>
         </figure>
         <div class="card__content">
           <h1>
@@ -35,11 +41,20 @@
         </div>
         <section class="author">
           <figure>
-            <img
-              class="author__avatar"
-              src="./images/avatar-michelle.jpg"
-              alt="Michelle Appleton avatar"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/avatar-michelle.webp    1x,
+                  ./images/avatar-michelle@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="author__avatar"
+                src="./images/avatar-michelle.jpg"
+                alt="Michelle Appleton avatar"
+              />
+            </picture>
             <figcaption class="author__name">Michelle Appleton</figcaption>
             <p class="date">28 Jun 2020</p>
             <button>
