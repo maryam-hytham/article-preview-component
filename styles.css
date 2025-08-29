@@ -60,3 +60,32 @@ body {
 .card img {
   width: 100%;
 }
+
+/* Author section */
+.author__info {
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.6rem 2.4rem;
+}
+.author__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.author__name {
+  font-weight: bold;
+}
+.date {
+  color: var(--grey-400);
+}
+.share-btn {
+  align-self: center;
+  background-color: var(--grey-200);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 32px;
+  margin-left: auto;
+  padding: 5px;
+  width: 32px;
+}
