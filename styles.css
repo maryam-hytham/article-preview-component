@@ -1,3 +1,9 @@
+/* ALL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* Colors */
 :root {
   --grey-900: #48556a;
@@ -15,11 +21,42 @@ body {
   font-family: "manrope", sans-serif;
   font-size: 1.3rem;
   font-weight: medium;
-  letter-spacing: 0.12%;
+  letter-spacing: 0.12px;
   line-height: 140%;
 }
 h1 {
   color: var(--grey-900);
   font-size: 2rem;
   font-weight: bold;
+  letter-spacing: 0.25px;
+  line-height: 130%;
+  margin-bottom: 3rem;
+}
+
+/* Card */
+body {
+  align-items: center;
+  background-color: var(--grey-200);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2.4rem 6.5rem;
+}
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 0;
+  justify-self: center;
+  box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+}
+.card__content {
+  padding: 2.4rem;
+}
+.image img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card img {
+  width: 100%;
 }
