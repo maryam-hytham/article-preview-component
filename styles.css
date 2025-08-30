@@ -60,6 +60,7 @@ body {
 }
 img {
   width: 100%;
+  object-position: center;
 }
 
 /* Author section */
@@ -213,7 +214,7 @@ img {
 
 /* For desktops */
 @media screen and (min-width: 1024px) {
-  body{
+  body {
     width: 65%;
   }
 }
