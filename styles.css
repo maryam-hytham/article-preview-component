@@ -65,7 +65,7 @@ img {
 /* Author section */
 .author__info {
   display: flex;
-  gap: 1.6rem;
+  gap: 1rem;
   padding: 1.6rem 3rem;
 }
 .author__avatar {
@@ -81,14 +81,18 @@ img {
 }
 .share-btn {
   align-self: center;
+  justify-self: center;
   background-color: var(--grey-200);
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  height: 32px;
+  height: 34px;
   margin-left: auto;
   padding: 5px;
-  width: 32px;
+  width: 34px;
+}
+.share-btn:hover {
+  background-color: var(--grey-500);
 }
 /* Modal */
 .overlay {
@@ -96,17 +100,21 @@ img {
   background-color: var(--grey-900);
   border-radius: 0 0 1rem 1rem;
   display: flex;
-  padding: 2.2rem 3rem;
+  padding: 2rem 3rem 3rem;
   align-items: center;
   gap: 2rem;
   position: absolute;
   bottom: 0;
   opacity: 0;
+  transition: opacity 0.3s;
 }
 .overlay p {
   color: var(--grey-400);
   letter-spacing: 0.25rem;
   font-weight: 500;
+}
+.overlay.active {
+  opacity: 1;
 }
 .icon {
   background: none;
@@ -115,10 +123,34 @@ img {
 }
 .icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 .share-btn-active {
   background-color: var(--grey-500);
-  margin-left: auto;
-  align-self: center;
+  padding-bottom: 26px;
+}
+@media screen and (max-width: 375px) {
+  .overlay {
+    display: block;
+    padding: 1rem 2rem;
+    padding: 3rem 1rem 1rem 2rem;
+  }
+  .overlay p {
+    margin-bottom: 1rem;
+  }
+  .overlay .icons {
+    margin-bottom: 1rem;
+  }
+  .author__info {
+    padding: 1rem 2rem;
+    display: block;
+  }
+  .card__content {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .share-btn-active {
+    padding-bottom: 20px;
+  }
 }
