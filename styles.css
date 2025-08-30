@@ -134,7 +134,7 @@ img {
   gap: 0.7rem;
 }
 
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 375px) {
   .overlay {
     display: block;
     padding: 3rem 1rem 1rem 2rem;
@@ -156,14 +156,14 @@ img {
     padding-bottom: 1rem;
   }
 }
-@media screen and (min-width: 37.5rem) and (max-width: 42.5rem) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
   .overlay {
     padding-bottom: 2.5rem;
   }
 }
 
 /* Design for tablets */
-@media screen and (min-width: 76.8rem) {
+@media screen and (min-width: 768px) {
   body {
     padding: 2.4rem 6.5rem;
   }
@@ -220,7 +220,7 @@ img {
 }
 
 /* For desktops */
-@media screen and (min-width: 102.4rem) {
+@media screen and (min-width: 1024px) {
   body {
     width: 65%;
   }
