@@ -163,9 +163,9 @@ img {
     display: flex;
   }
   .image img {
-  border-radius: 1rem 0 0 1rem;
-  height: 100%;
-}
+    border-radius: 1rem 0 0 1rem;
+    height: 100%;
+  }
   .overlay {
     bottom: 80px;
     right: 0;
@@ -209,4 +209,11 @@ img {
 
 .overlay-btn-active img {
   filter: brightness(0) invert(1);
+}
+
+/* For desktops */
+@media screen and (min-width: 1024px) {
+  body{
+    width: 75%;
+  }
 }
