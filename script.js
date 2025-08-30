@@ -1,14 +1,11 @@
-const shareBtn = document.querySelector(".share-btn");
-const overlayBtn = document.querySelector(".overlay-btn");
-const overlay = document.querySelector(".overlay");
-
 document.addEventListener("DOMContentLoaded", () => {
   const shareBtns = document.querySelectorAll(".share-btn");
-  const overlay = document.querySelector(".overlay");
+  const overlayModal = document.querySelector(".overlay");
+  const overlayBtn = document.querySelector(".overlay-btn");
 
   shareBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      overlay.classList.toggle("active");
+      overlayModal.classList.toggle("active");
       if (window.innerWidth >= 768) {
         btn.classList.toggle("share-btn-active");
       } else {
