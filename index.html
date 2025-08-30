@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.jpg" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <title>Article preview component</title>
+    <title>Article Preview Component</title>
   </head>
   <body>
     <main>
       <article class="card">
+        <!-- Image -->
         <figure class="image">
           <picture>
             <source
@@ -28,41 +26,48 @@
             <img src="./images/drawers.jpg" alt="Drawers picture" />
           </picture>
         </figure>
-        <div class="card__content">
-          <h1>
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h1>
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-        </div>
-        <section class="author">
-          <figure class="author__info">
-            <picture>
-              <source
-                srcset="
-                  ./images/avatar-michelle.webp    1x,
-                  ./images/avatar-michelle@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <img
-                class="author__avatar"
-                src="./images/avatar-michelle.jpg"
-                alt="Michelle Appleton avatar"
-              />
-            </picture>
-            <div>
-              <figcaption class="author__name">Michelle Appleton</figcaption>
-              <p class="date">28 Jun 2020</p>
-            </div>
-            <button class="share-btn" aria-label="Share article">
-              <img src="./images/icon-share.svg" alt="Share" />
-            </button>
-          </figure>
+
+        <!-- Card content and author wrapped together -->
+        <div class="card__body">
+          <div class="card__content">
+            <h1>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+
+          <section class="author">
+            <figure class="author__info">
+              <picture>
+                <source
+                  srcset="
+                    ./images/avatar-michelle.webp    1x,
+                    ./images/avatar-michelle@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="author__avatar"
+                  src="./images/avatar-michelle.jpg"
+                  alt="Michelle Appleton avatar"
+                />
+              </picture>
+              <div>
+                <figcaption class="author__name">Michelle Appleton</figcaption>
+                <p class="date">28 Jun 2020</p>
+              </div>
+              <button class="share-btn" aria-label="Share article">
+                <img src="./images/icon-share.svg" alt="Share" />
+              </button>
+            </figure>
+          </section>
+
+          <!-- Overlay (inside the card for mobile) -->
           <div class="overlay">
             <p>SHARE</p>
             <div class="icons">
@@ -76,14 +81,11 @@
                 <img src="./images/icon-pinterest.svg" alt="Pinterest" />
               </button>
             </div>
-            <button
-              class="share-btn share-btn-active"
-              aria-label="Share article"
-            >
-              <img src="./images/share.png" alt="Share" />
+            <button class="share-btn overlay-btn" aria-label="Share article">
+              <img src="./images/icon-share.svg" alt="Share" />
             </button>
           </div>
-        </section>
+        </div>
       </article>
     </main>
 

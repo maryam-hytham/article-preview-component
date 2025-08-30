@@ -1,11 +1,19 @@
-// Variables
-const buttons = document.querySelectorAll(".share-btn");
+const shareBtn = document.querySelector(".share-btn");
+const overlayBtn = document.querySelector(".overlay-btn");
 const overlay = document.querySelector(".overlay");
 
-// Event Listeners
+document.addEventListener("DOMContentLoaded", () => {
+  const shareBtns = document.querySelectorAll(".share-btn");
+  const overlay = document.querySelector(".overlay");
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    overlay.classList.toggle("active");
+  shareBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      overlay.classList.toggle("active");
+      if (window.innerWidth >= 768) {
+        btn.classList.toggle("share-btn-active");
+      } else {
+        overlayBtn.classList.toggle("overlay-btn-active");
+      }
+    });
   });
 });
