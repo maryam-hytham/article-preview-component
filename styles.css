@@ -108,6 +108,13 @@ img {
   transition: opacity 0.3s;
   pointer-events: none;
 }
+
+/* Disable transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    transition: none; /* Remove animation to prevent motion sickness */
+  }
+}
 .overlay p {
   color: var(--grey-400);
   letter-spacing: 0.25rem;
@@ -127,7 +134,7 @@ img {
   gap: 0.7rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 37.5rem) {
   .overlay {
     display: block;
     padding: 3rem 1rem 1rem 2rem;
@@ -149,14 +156,14 @@ img {
     padding-bottom: 1rem;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 37.5rem) and (max-width: 42.5rem) {
   .overlay {
     padding-bottom: 2.5rem;
   }
 }
 
 /* Design for tablets */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 76.8rem) {
   body {
     padding: 2.4rem 6.5rem;
   }
@@ -213,7 +220,7 @@ img {
 }
 
 /* For desktops */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 102.4rem) {
   body {
     width: 65%;
   }
